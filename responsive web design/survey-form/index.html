@@ -49,37 +49,77 @@
           <option value="other">Other (Please specify in comments)</option>
         </select>
 
-        <h3>How satisfied were you with your visit?</h3>
-        <label for="very-satisfied">Very Satisfied</label>
-        <input type="radio" name="satisfaction" id="very-satisfied" />
-        <label for="satisfied">Satisfied</label>
-        <input type="radio" name="satisfaction" id="satisfied" />
-        <label for="neutral">Neutral</label>
-        <input type="radio" name="satisfaction" id="neutral" />
-        <label for="dissatisfied">Dissatisfied</label>
-        <input type="radio" name="satisfaction" id="dissatisfied" />
-        <label for="very-dissatisfied">Very Dissatisfied</label>
-        <input type="radio" name="satisfaction" id="very-dissatisfied" />
+        <div class="radio-wrapper">
+          <h3>How satisfied were you with your visit?</h3>
 
-        <h3>
-          Which activities did you participate in? (Select all that apply)
-        </h3>
-        <label for="hiking">Hiking</label>
-        <input type="checkbox" value="hiking" id="hiking" />
-        <label for="hiking">Camping</label>
-        <input type="checkbox" value="camping" id="camping" />
-        <label for="hiking">Wildlife Viewing</label>
-        <input type="checkbox" value="wildlife" id="wildlife" />
-        <label for="hiking">Photography</label>
-        <input type="checkbox" value="photography" id="photography" />
-        <label for="hiking">Fishing</label>
-        <input type="checkbox" value="fishing" id="fishing" />
-        <label for="hiking">Boating</label>
-        <input type="checkbox" value="boating" id="boating" />
-        <label for="hiking">Educational Programs</label>
-        <input type="checkbox" value="education" id="education" />
-        <label for="hiking">Scenic Driving</label>
-        <input type="checkbox" value="driving" id="driving" />
+          <div>
+            <label for="very-satisfied">Very Satisfied</label>
+            <input type="radio" name="satisfaction" id="very-satisfied" />
+          </div>
+
+          <div>
+            <label for="satisfied">Satisfied</label>
+            <input type="radio" name="satisfaction" id="satisfied" />
+          </div>
+
+          <div>
+            <label for="neutral">Neutral</label>
+            <input type="radio" name="satisfaction" id="neutral" />
+          </div>
+
+          <div>
+            <label for="dissatisfied">Dissatisfied</label>
+            <input type="radio" name="satisfaction" id="dissatisfied" />
+          </div>
+
+          <label for="very-dissatisfied">Very Dissatisfied</label>
+          <input type="radio" name="satisfaction" id="very-dissatisfied" />
+        </div>
+
+        <div class="checkbox-wrapper">
+          <h3>
+            Which activities did you participate in? (Select all that apply)
+          </h3>
+          <div>
+            <label for="hiking">Hiking</label>
+            <input type="checkbox" value="hiking" id="hiking" />
+          </div>
+
+          <div>
+            <label for="camping">Camping</label>
+            <input type="checkbox" value="camping" id="camping" />
+          </div>
+
+          <div>
+            <label for="wildlife">Wildlife Viewing</label>
+            <input type="checkbox" value="wildlife" id="wildlife" />
+          </div>
+
+          <div>
+            <label for="photography">Photography</label>
+            <input type="checkbox" value="photography" id="photography" />
+          </div>
+
+          <div>
+            <label for="fishing">Fishing</label>
+            <input type="checkbox" value="fishing" id="fishing" />
+          </div>
+
+          <div>
+            <label for="boating">Boating</label>
+            <input type="checkbox" value="boating" id="boating" />
+          </div>
+
+          <div>
+            <label for="education">Educational Programs</label>
+            <input type="checkbox" value="education" id="education" />
+          </div>
+
+          <div>
+            <label for="driving">Scenic Driving</label>
+            <input type="checkbox" value="driving" id="driving" />
+          </div>
+        </div>
 
         <label for="experience"></label>
         <textarea
@@ -87,7 +127,7 @@
           id="experience"
         ></textarea>
 
-        <button id="submit" type="submit">Submit</button>
+        <button id="submit" type="submit">Submit Your Feedback</button>
       </form>
     </div>
   </body>
