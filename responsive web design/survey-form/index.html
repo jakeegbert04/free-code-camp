@@ -3,7 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="survey-container">
+      <h1 class="title">Share Your National Park Experience</h1>
+      <p class="description">
+        We would love to hear about your recent visit to one of our beautiful
+        national parks. Your feedback helps us improve the experience for all
+        visitors!
+      </p>
+      <form class="survey-form">
+        <label id="number-label" for="name">Full Name: </label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <label for="email" id="email-label">Email: </label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="number" id="number-label"></label>
+        <input
+          type="number"
+          id="number"
+          min="0"
+          max="1000"
+          placeholder="Enter number of visits"
+        />
+
+        <select id="dropdown">
+          <option value="yosemite">Yosemite National Park</option>
+          <option value="yellowstone">Yellowstone National Park</option>
+          <option value="grand-canyon">Grand Canyon National Park</option>
+          <option value="smoky-mountains">
+            Great Smoky Mountains National Park
+          </option>
+          <option value="other">Other (Please specify in comments)</option>
+        </select>
+
+        <h3>How satisfied were you with your visit?</h3>
+        <label for="very-satisfied">Very Satisfied</label>
+        <input type="radio" name="satisfaction" id="very-satisfied" />
+        <label for="satisfied">Satisfied</label>
+        <input type="radio" name="satisfaction" id="satisfied" />
+        <label for="neutral">Neutral</label>
+        <input type="radio" name="satisfaction" id="neutral" />
+        <label for="dissatisfied">Dissatisfied</label>
+        <input type="radio" name="satisfaction" id="dissatisfied" />
+        <label for="very-dissatisfied">Very Dissatisfied</label>
+        <input type="radio" name="satisfaction" id="very-dissatisfied" />
+
+        <h3>
+          Which activities did you participate in? (Select all that apply)
+        </h3>
+        <label for="hiking">Hiking</label>
+        <input type="checkbox" value="hiking" id="hiking" />
+        <label for="hiking">Camping</label>
+        <input type="checkbox" value="camping" id="camping" />
+        <label for="hiking">Wildlife Viewing</label>
+        <input type="checkbox" value="wildlife" id="wildlife" />
+        <label for="hiking">Photography</label>
+        <input type="checkbox" value="photography" id="photography" />
+        <label for="hiking">Fishing</label>
+        <input type="checkbox" value="fishing" id="fishing" />
+        <label for="hiking">Boating</label>
+        <input type="checkbox" value="boating" id="boating" />
+        <label for="hiking">Educational Programs</label>
+        <input type="checkbox" value="education" id="education" />
+        <label for="hiking">Scenic Driving</label>
+        <input type="checkbox" value="driving" id="driving" />
+
+        <label for="experience"></label>
+        <textarea
+          placeholder="Tell us about your favorite moments or suggestions for improvement."
+          id="experience"
+        ></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
