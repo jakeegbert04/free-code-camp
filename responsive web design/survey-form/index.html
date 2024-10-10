@@ -12,14 +12,14 @@
       alt="national park logo"
     />
     <div class="survey-container">
-      <h1 class="title">Share Your National Park Experience</h1>
-      <p class="description">
+      <h1 id="title">Share Your National Park Experience</h1>
+      <p id="description">
         We would love to hear about your recent visit to one of our beautiful
         national parks. Your feedback helps us improve the experience for all
         visitors!
       </p>
-      <form class="survey-form">
-        <label id="number-label" for="name">Full Name: </label>
+      <form id="survey-form">
+        <label id="name-label" for="name">Full Name: </label>
         <input
           type="text"
           id="name"
@@ -35,7 +35,7 @@
           required
         />
 
-        <label for="number" id="number-label"></label>
+        <label for="number" id="number-label">Number of visits: </label>
         <input
           type="number"
           id="number"
@@ -43,6 +43,8 @@
           max="1000"
           placeholder="Enter number of visits"
         />
+
+        <h3>Which National Park did you visit?</h3>
 
         <select id="dropdown">
           <option value="yosemite">Yosemite National Park</option>
@@ -58,27 +60,54 @@
           <h3>How satisfied were you with your visit?</h3>
 
           <div>
+            <input
+              type="radio"
+              name="satisfaction"
+              value="very-satisfied"
+              id="very-satisfied"
+            />
             <label for="very-satisfied">Very Satisfied</label>
-            <input type="radio" name="satisfaction" id="very-satisfied" />
           </div>
 
           <div>
+            <input
+              type="radio"
+              name="satisfaction"
+              value="satisfaction"
+              id="satisfied"
+            />
             <label for="satisfied">Satisfied</label>
-            <input type="radio" name="satisfaction" id="satisfied" />
           </div>
 
           <div>
+            <input
+              type="radio"
+              name="satisfaction"
+              value="satisfaction"
+              id="neutral"
+            />
             <label for="neutral">Neutral</label>
-            <input type="radio" name="satisfaction" id="neutral" />
           </div>
 
           <div>
+            <input
+              type="radio"
+              name="satisfaction"
+              value="dissatisfied"
+              id="dissatisfied"
+            />
             <label for="dissatisfied">Dissatisfied</label>
-            <input type="radio" name="satisfaction" id="dissatisfied" />
           </div>
 
-          <label for="very-dissatisfied">Very Dissatisfied</label>
-          <input type="radio" name="satisfaction" id="very-dissatisfied" />
+          <div>
+            <input
+              type="radio"
+              name="satisfaction"
+              value="very-dissatisfied"
+              id="very-dissatisfied"
+            />
+            <label for="very-dissatisfied">Very Dissatisfied</label>
+          </div>
         </div>
 
         <div class="checkbox-wrapper">
@@ -86,43 +115,43 @@
             Which activities did you participate in? (Select all that apply)
           </h3>
           <div>
-            <label for="hiking">Hiking</label>
             <input type="checkbox" value="hiking" id="hiking" />
+            <label for="hiking">Hiking</label>
           </div>
 
           <div>
-            <label for="camping">Camping</label>
             <input type="checkbox" value="camping" id="camping" />
+            <label for="camping">Camping</label>
           </div>
 
           <div>
-            <label for="wildlife">Wildlife Viewing</label>
             <input type="checkbox" value="wildlife" id="wildlife" />
+            <label for="wildlife">Wildlife Viewing</label>
           </div>
 
           <div>
-            <label for="photography">Photography</label>
             <input type="checkbox" value="photography" id="photography" />
+            <label for="photography">Photography</label>
           </div>
 
           <div>
-            <label for="fishing">Fishing</label>
             <input type="checkbox" value="fishing" id="fishing" />
+            <label for="fishing">Fishing</label>
           </div>
 
           <div>
-            <label for="boating">Boating</label>
             <input type="checkbox" value="boating" id="boating" />
+            <label for="boating">Boating</label>
           </div>
 
           <div>
-            <label for="education">Educational Programs</label>
             <input type="checkbox" value="education" id="education" />
+            <label for="education">Educational Programs</label>
           </div>
 
           <div>
-            <label for="driving">Scenic Driving</label>
             <input type="checkbox" value="driving" id="driving" />
+            <label for="driving">Scenic Driving</label>
           </div>
         </div>
 
